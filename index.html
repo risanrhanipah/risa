@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from themesdesign.in/harold/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Nov 2022 09:50:04 GMT -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta content="Themesdesign" name="author" />
+    <link rel="shortcut icon" href="images/logo.png">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/tiny-slider.css.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand logo text-uppercase" href="index.html">
+                <img src="images/logo-light.png" class="logo-light" alt="" height="34">
+                <img src="images/logo-dark.png" class="logo-dark" alt="" height="34">
+            </a>
+
+            <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto navbar-center">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#aboutme" class="nav-link ">Resume</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#service" class="nav-link ">Certification</a>
+                    </li>
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#blog" class="nav-link ">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <!--end navbar-nav-->
+                <div class="ms-auto ps-2 ps-lg-0">
+                    <!-- <a href="#" class="btn btn-dark rounded-pill my-3 my-lg-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a> -->
+                </div>
+            </div>
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form class="row g-3 needs-validation">
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">First name <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Email <span
+                                    class="text-primary">*</span></label>
+                            <input type="email" class="form-control" id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Subject <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom05" class="form-label">Password <span
+                                    class="text-primary">*</span></label>
+                            <input type="password" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="validationTextarea" class="form-label">Textarea<span
+                                    class="text-primary">*</span></label>
+                            <textarea class="form-control" id="validationTextarea" required></textarea>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+    <!-- home section -->
+    <section class="home" id="home" style="background-image: url(images/bg-home.png);">
+        <!-- start container -->
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="home-slider" id="home-slider">
+                        <div class="item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="content-item">
+                                        <br>
+                                        <p class="text-warning fw-semibold mb-0">Hello! I AM</p>
+                                        <div class="home-title mb-0 fw-bold h1">
+                                            <span class="typewrite " data-period="2000"
+                                                data-type='[ "Risa Nurhanipah","Software Engineer","Quality Assurance Engineer" ]'>
+                                                <span class="wrap text-dark"></span>
+                                            </span>
+                                        </div>
+                                        <p class="mt-3 text-muted">Innovative and deadline oriented Web Developer with
+                                            approximately 2 years experience designing and developing several web based
+                                            applications.</p>
+
+                                        <div class="icon-item mt-4">
+                                            <div class="d-flex">
+                                                <a
+                                                    href="https://api.whatsapp.com/send?phone=6283176616241&text=Hallo%20Risa Nurhanipah">
+                                                    <div class="social-icon facebook avatar-sm">
+                                                        <i class="mdi mdi-whatsapp"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="https://www.instagram.com/risaanrh/">
+                                                    <div class="social-icon instagram avatar-sm">
+                                                        <i class="mdi mdi-instagram"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="https://github.com/risanrhanipah">
+                                                    <div class="social-icon pinterest avatar-sm">
+                                                        <i class="mdi mdi-github"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="https://www.linkedin.com/in/risa-nurhanipah-403854193/">
+                                                    <div class="social-icon linkedin avatar-sm">
+                                                        <i class="mdi mdi-linkedin"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <a
+                                            href="https://drive.google.com/file/d/16GQ92Ox9qFjBdXgVIP8zbOqbUS80RbrH/view?usp=sharing"><button
+                                                class="btn btn-rounded btn-primary rounded-pill">Download CV
+                                            </button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end home section -->
+
+    <!-- about-me section -->
+    <section class="section about-me" id="aboutme">
+        <!-- container -->
+        <div class="container">
+            <div class="about-box">
+                <div class="row">
+
+                    <div class="col-lg-4 position-relative">
+                        <div class="image-round">
+                        </div>
+                        <div class="p-0 position-relative">
+                            <img src="images/home/profile.png" style="width:400px;height:387px;">
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-8">
+                        <div class="about-item p-5">
+                            <h2 class="display-5 fw-semibold">About Me</h2>
+                            <p class="text-muted fs-14">I am a programmer who is an expert in the Backend section and
+                                has a little knowledge of the frontend, design, and quality assurance tester. I am a
+                                person who likes to learn new things, especially those related to programming languages
+                                and I have a high desire to improve my IT skills. I am able to work in a team or
+                                individually, able to work under pressure and adapt easily in new environment. I have
+                                experience designing websites and managing databases. allows me to interact with
+                                multiple clients.</p>
+
+                            <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Skills</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Experience</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Education</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <br>
+                                    <h6>Programming Languages</h6>
+                                    <div class="skill-item mt-2 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Laravel</h6>
+                                            <h6>87%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="87"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 87%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-item mt-1 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>CodeIgniter</h6>
+                                            <h6>80%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-item mt-1 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>JavaScript</h6>
+                                            <h6>70%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <h6>Database</h6>
+                                    <div class="skill-item mt-2 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>MySQL</h6>
+                                            <h6>85%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-item mt-1 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>PostgreSQL</h6>
+                                            <h6>70%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <br><br>
+                                    <h6>Other</h6>
+                                    <div class="skill-item mt-2 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>English languages</h6>
+                                            <h6>75%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-item mt-1 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>QA Engineer</h6>
+                                            <h6>80%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="experience">
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Web Developer</h5>
+                                                    <p class="text-muted fs-15">CV IDS (Internship) | September -
+                                                        December 2020</p>
+                                                    <p class="text-muted fs-15">Designed and created an application
+                                                        student data, a platform for managing data which was built using
+                                                        laravel framework and mySQL database. <br>Managed team’s work
+                                                        using
+                                                        gitlab version control system. <br>Visualized the user interface
+                                                        of
+                                                        the application using Figma. <br>Managed mySQL database using
+                                                        PostgreSQL. <br>learn Representational state transfer (Rest
+                                                        API).</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Web Developer</h5>
+                                                    <p class="text-muted fs-15">PT Trimitra Putra Mandiri |
+                                                        September 2021 - Present</p>
+                                                    <p class="text-muted fs-15">Designed and create an application
+                                                        classification and driver activity. <br>Maintenance and
+                                                        management
+                                                        application Human Resource Information System.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Quality Assurance Tester</h5>
+                                                    <p class="text-muted fs-15">PT Trimitra Putra Mandiri |
+                                                        January 2022 - Present</p>
+                                                    <p class="text-muted fs-15">Perform tests on devices or emulators
+                                                        (Tes Ujian and Psikotes application). <br>Create test flows and
+                                                        generate report from the test results.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">
+                                    <div class="experience">
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Software Engineering</h5>
+                                                    <p class="text-muted fs-15 mb-0">Wikrama Vocational High School |
+                                                        2018 - 2021</p><br>
+                                                    <p class="text-muted fs-15 mb-0">I got basic knowledge networking,
+                                                        basic graphic design, database, object oriented programming
+                                                        method, and programming languages like php, java, c++ and c#.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Corporate Information Systems</h5>
+                                                    <p class="text-muted fs-15 mb-0">Bina Nusantara University | 2022 -
+                                                        2026</p><br>
+                                                    <p class="text-muted fs-15">Currently l have learned about things
+                                                        related to technology, both in software and hardware. In
+                                                        addition, I also learn how to design and carry out good business
+                                                        processes so that they can be integrated with the technology
+                                                        used.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end about-me -->
+
+    <!-- start service -->
+    <section class="section service" id="service">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h6 class="mb-0 text-muted fs-15">LICENSES & CERTIFICATION</h6>
+                        <h2>Certification</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <a href="images/dicoding - python.jpg">
+                                <div class="research avatar-sm bg-soft-purple text-center"><i
+                                        class="mdi mdi-language-python fs-24 text-purple"></i>
+                                </div>
+                                <h6 class="mt-4" style="color:rgb(51, 51, 51);"> Basic Python</h5>
+                                    <h6 class="mb-0 text-muted fs-15">Dicoding Academy</h6><br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-danger text-center">
+                                <i class="mdi mdi-book-alphabet fs-24 text-danger"></i>
+                            </div>
+                            <h6 class="mt-4">IELTS Training</h6>
+                            <h6 class="mb-0 text-muted fs-15">Euro Management Indonesia</h6><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <a href="images/cv ids - ujikom.jpg">
+                                <div class="research avatar-sm bg-soft-warning text-center">
+                                    <i class="mdi mdi-laptop-mac fs-24 text-warning"></i>
+                                </div>
+                                <h6 class="mt-4" style="color:rgb(51, 51, 51);">Skill Competency Test</h6>
+                                <h6 class="mb-0 text-muted fs-15">CV IDS</h6><br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <a href="images/digital.jpg">
+                                <div class="research avatar-sm bg-soft-blue text-center">
+                                    <i class="mdi mdi-google-my-business fs-24 text-blue"></i>
+                                </div>
+                                <h6 class="mt-4" style="color:rgb(51, 51, 51);">Business Marketing Strategy and Product
+                                    Optimization</h6>
+                                <h6 class="mb-0 text-muted fs-15">Digital Talent Scholarship</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <a href="images/progate - python.jpg">
+                                <div class="research avatar-sm bg-soft-primary text-center">
+                                    <i class="mdi mdi-language-python fs-24 text-primary"></i>
+                                </div>
+                                <h6 class="mt-4" style="color:rgb(51, 51, 51);"> Basic Python (Backend)</h6>
+                                <h6 class="mb-0 text-muted fs-15">Progate Indonesia</h6><br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <a href="images/adinusa - cyber security.jpg">
+                                <div class="research avatar-sm bg-soft-pink text-center">
+                                    <i class="mdi mdi-security-network fs-24 text-pink"></i>
+                                </div>
+                                <h6 class="mt-4" style="color:rgb(51, 51, 51);">Cyber Security Training</h6>
+                                <h6 class="mb-0 text-muted fs-15">Academy Digital Nusantara</h6><br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-danger text-center">
+                                <i class="mdi mdi-book-alphabet fs-24 text-danger"></i>
+                            </div>
+                            <h6 class="mt-4">Test of English for International Communication</h6>
+                            <h6 class="mb-0 text-muted fs-15">The TOEIC Program</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <a href="#">
+                                <div class="research avatar-sm bg-soft-blue text-center">
+                                    <i class="mdi mdi-language-javascript fs-24 text-blue"></i>
+                                </div>
+                                <h6 class="mt-4" style="color:rgb(51, 51, 51);">Basic JavaScript</h6>
+                                <h6 class="mb-0 text-muted fs-15">Dicoding Academy</h6><br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <a href="images/magang.jpg">
+                                <div class="research avatar-sm bg-soft-primary text-center">
+                                    <i class="mdi mdi-responsive fs-24 text-primary"></i>
+                                </div>
+                                <h6 class="mt-4" style="color:rgb(51, 51, 51);">Internship</h6>
+                                <h6 class="mb-0 text-muted fs-15">CV IDS</h6><br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end service -->
+
+    <!-- start blog -->
+    <section class="section blog" id="blog">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-4">
+                        <h6 class="mb-0 text-muted fs-15">PORTFOLIO</h6>
+                        <h2>Project</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="swiper-container py-5">
+                    <div class="swiper-wrapper pt-3">
+                        <!-- start slider -->
+                        <div class="swiper-slide border-radius position-relative ">
+                            <div class="blog-item p-4 box-shadow">
+                                <div class="blog-image">
+                                    <img src="images/hris.png" alt="" class="img-fluid">
+                                    <div class="blog-image-icon bg-blue">
+                                        <i class="mdi mdi-responsive fs-24"></i>
+                                    </div>
+                                </div>
+                                <div class="blog-content mt-5">
+                                    <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
+                                    <a href="#">
+                                        <h5>Human Resources Information System (HRIS)</h5>
+                                    </a>
+                                    <p class="fs-15 text-muted">Maintenance and management application Human Resource
+                                        Information System (HRIS), a system used to facilitate the management and access
+                                        of
+                                        employee data. Built using codeigniter framework and DBeaver database
+                                        administrator.</p>
+                                    <a href="https://hris.tpm-facility.com/" class="text-dark fw-semibold">Click Here <i
+                                            class="mdi mdi-arrow-right fs-16"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slider -->
+
+                        <!-- start slider -->
+                        <div class="swiper-slide border-radius position-relative ">
+                            <div class="blog-item p-4 box-shadow">
+                                <div class="blog-image">
+                                    <img src="images/driver.png" alt="" class="img-fluid">
+                                    <div class="blog-image-icon bg-primary">
+                                        <i class="mdi mdi-car fs-24"></i>
+                                    </div>
+                                </div>
+                                <div class="blog-content mt-5">
+                                    <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
+                                    <a href="#">
+                                        <h5>Driver Activity</h5>
+                                    </a>
+                                    <p class="fs-15 text-muted">The activity driver is a measure of the frequency and
+                                        intensity of demand for an activity against a cost object. This application was
+                                        built to make it easier for drivers to apply for travel documents and work
+                                        absences every day. Designed with laravel framework and mySQL database</p>
+                                    <a href="#" class="text-dark fw-semibold">Click Here <i
+                                            class="mdi mdi-arrow-right fs-16"></i></a><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slider -->
+
+                        <!-- start slider -->
+                        <div class="swiper-slide border-radius position-relative ">
+                            <div class="blog-item p-4 box-shadow">
+                                <div class="blog-image">
+                                    <img src="images/pos.png" alt="" class="img-fluid">
+                                    <div class="blog-image-icon bg-danger">
+                                        <i class="mdi mdi-cash-register fs-24"></i>
+                                    </div>
+                                </div>
+                                <div class="blog-content mt-5">
+                                    <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
+                                    <a href="#">
+                                        <h5>Point Of Sales (POS)</h5>
+                                    </a>
+                                    <p class="fs-15 text-muted">Software that is used to support direct transactions
+                                        with sellers in various retail stores, POS can calculate quickly, save money,
+                                        and also print invoices or receipts for customers. Built using laravel framework
+                                        and MySQL
+                                        database.</p>
+                                    <a href="https://github.com/risanrhanipah/point-of-sales"
+                                        class="text-dark fw-semibold">Click Here <i
+                                            class="mdi mdi-arrow-right fs-16"></i></a><br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slider -->
+
+                        <!-- start slider -->
+                        <div class="swiper-slide border-radius position-relative ">
+                            <div class="blog-item p-4 box-shadow">
+                                <div class="blog-image">
+                                    <img src="images/supervisor.png" alt="" class="img-fluid">
+                                    <div class="blog-image-icon bg-success">
+                                        <i class="mdi mdi-account-supervisor fs-24"></i>
+                                    </div>
+                                </div>
+                                <div class="blog-content mt-5">
+                                    <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
+                                    <a href="#">
+                                        <h5>Supervisor</h5>
+                                    </a>
+                                    <p class="fs-15 text-muted">A platform created to make it easier for supervisors
+                                        to manage the day-to-day performance of the team. With proper supervision,
+                                        employee
+                                        performance will increase optimally. This app is built using laravel framework
+                                        and mySQL
+                                        database.</p>
+                                    <a href="https://github.com/risanrhanipah/supervisor"
+                                        class="text-dark fw-semibold">Click Here <i
+                                            class="mdi mdi-arrow-right fs-16"></i></a><br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slider -->
+
+                        <!-- start slider -->
+                        <div class="swiper-slide border-radius position-relative ">
+                            <div class="blog-item p-4 box-shadow">
+                                <div class="blog-image">
+                                    <img src="images/spp.png" alt="" class="img-fluid">
+                                    <div class="blog-image-icon bg-info">
+                                        <i class="mdi mdi-calculator fs-24"></i>
+                                    </div>
+                                </div>
+                                <div class="blog-content mt-5">
+                                    <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
+                                    <a href="#">
+                                        <h5>SPP Payment</h5>
+                                    </a>
+                                    <p class="fs-15 text-muted">Spp payment is a web-based application built with
+                                        laravel framework and mySQL database. This application makes it easier for
+                                        officers to
+                                        process data and payment transactions that can improve services to students.</p>
+                                    <a href="https://github.com/risanrhanipah/spp-payment"
+                                        class="text-dark fw-semibold">Click Here <i
+                                            class="mdi mdi-arrow-right fs-16"></i></a><br><br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slider -->
+                        <div class="swiper-slide border-radius position-relative ">
+                            <div class="blog-item p-4 box-shadow">
+                                <div class="blog-image">
+                                    <img src="images/psikotes.png" alt="" class="img-fluid">
+                                    <div class="blog-image-icon bg-secondary">
+                                        <i class="mdi mdi-head fs-24"></i>
+                                    </div>
+                                </div>
+                                <div class="blog-content mt-5">
+                                    <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
+                                    <a href="#">
+                                        <h5>Psikotes</h5>
+                                    </a>
+                                    <p class="fs-15 text-muted">Conducting analysis testing, process improvement,
+                                        defect management, and manual user acceptance testing on the online
+                                        psychological test
+                                        application, a psychological platform to find out a person's personality online.
+                                    </p>
+                                    <a href="https://psikotesdaring.com/" class="text-dark fw-semibold">Click Here <i
+                                            class="mdi mdi-arrow-right fs-16"></i></a><br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- navigation buttons -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end blog -->
+
+    <!-- start contact -->
+    <section class="contact pt-5 pb-0" id="contact">
+        <!-- start container -->
+        <div class="container">
+
+            <div class="shape-1">
+                <img src="images/testi/shape.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="contact-item">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="contact-info">
+                            <div class="mb-4">
+                                <h3>Get In Touch</h3>
+                                <p class="text-muted mb-0">If you’d like to talk about a project, my work or anything
+                                    else, please contact me.
+                                </p>
+                            </div>
+                            <hr>
+
+                            <div class="info-content mt-4">
+                                <h6>Address :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-home-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3">
+                                        <p class="mb-0 fs-15">Garut, West Java <br> Indonesia</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-content mt-4">
+                                <h6>Phone :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-phone-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3 mt-1">
+                                        <p class="mb-0 fs-15">(+62) 83176616241</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-content mt-4">
+                                <h6>Mail :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-email-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3 mt-1">
+                                        <p class="mb-0 fs-15">risaanurhanipah@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ">
+                        <div class="custom-form mt-4 ">
+                            <form action="https://formspree.io/f/mzboebzo" method="post" name="myForm">
+                                <h6 class="mb-0 text-muted">Let's talk</h6>
+                                <h3>Enter your message details</h3>
+                                <p id="error-msg" style="opacity: 1;">
+                                    <!-- <div class="alert alert-warning">*Please enter a Name*</div> -->
+                                </p>
+                                <div id="simple-msg"></div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input name="name" id="name" type="text" class="form-control contact-form"
+                                                placeholder="Your name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input name="email" id="email" type="email"
+                                                class="form-control contact-form" placeholder="Your email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control contact-form" id="subject"
+                                                placeholder="Your Subject..">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <textarea name="comments" id="comments" rows="4"
+                                                class="form-control contact-form h-auto"
+                                                placeholder="Your message..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-lg-12 d-grid">
+                                        <input type="submit" id="submit" name="send"
+                                            class="contact-form btn btn-rounded btn-primary" value="Send Message">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="shape-2">
+                        <img src="images/testi/shape-2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="shape-3 ">
+                        <img src="images/testi/shape-3.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <!-- end container -->
+    </section>
+    <!-- end contact -->
+
+    <!-- start footer -->
+    <section class=" footer">
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-0">
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+
+    <section class="bottom-footer py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <p class="mb-0 text-center text-muted">©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script><a href="#" class="text-muted"> Risa Nurhanipah.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end footer -->
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Slider Js -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <!-- conter -->
+    <script src="js/counter.init.js"></script>
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+<!-- Mirrored from themesdesign.in/harold/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Nov 2022 09:50:13 GMT -->
+
+</html>
